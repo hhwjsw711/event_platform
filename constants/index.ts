@@ -13,6 +13,21 @@ export const headerLinks = [
   },
 ]
 
+export const signoutHeaderLinks = [
+  {
+    label: 'Journey',
+    route: '/journey',
+  },
+  {
+    label: 'Program',
+    route: '/program',
+  },
+  {
+    label: 'Contact',
+    route: '/contact',
+  },
+]
+
 export const eventDefaultValues = {
   title: '',
   description: '',

@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Button } from "../ui/button"
 import NavItems from "./NavItems"
 import MobileNav from "./MobileNav"
+import SignOutNavItems from "./SignOutNavItems"
 
 const Header = () => {
   return (
@@ -21,6 +22,12 @@ const Header = () => {
             <NavItems />
           </nav>
         </SignedIn>
+
+        <SignedOut>
+          <nav className="md:flex-between hidden w-full max-w-xs">
+            <SignOutNavItems />
+          </nav>
+        </SignedOut>
 
         <div className="flex w-32 justify-end gap-3">
           <SignedIn>
