@@ -17,6 +17,7 @@ export const checkoutOrder = async (order: CheckoutOrderParams) => {
 
   try {
     const session = await stripe.checkout.sessions.create({
+      payment_method_types: ['card', 'alipay', 'wechat_pay', 'paynow'],
       line_items: [
         {
           price_data: {
